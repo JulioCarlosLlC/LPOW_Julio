@@ -79,7 +79,7 @@ nav ul #publicar_nav a{
 }
 
 body{
-  background: #FFFFFF ;
+  background: #EEEEEE ;
   font-family: "Open Sans";
   font-size: 16px;
 }
@@ -166,4 +166,48 @@ footer p:last-child::before{
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item{
   float: right;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?x3xh4i');
+  src:  url('fonts/icomoon.eot?x3xh4i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?x3xh4i') format('truetype'),
+    url('fonts/icomoon.woff?x3xh4i') format('woff'),
+    url('fonts/icomoon.svg?x3xh4i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-f-arriba:before {
+  content: "\e900";
+  color: #08A551;
+}
+.icon-f-abajo:before {
+  content: "\e901";
+  color: #FC9618;
+}
+.icon-lapiz:before {
+  content: "\e908";
+  background:  #22BCE0;
+  color: #FFFFFF;
+}
+.icon-estrella:before {
+  content: "\e9d9";
+  color: #FFEF00;
 }
