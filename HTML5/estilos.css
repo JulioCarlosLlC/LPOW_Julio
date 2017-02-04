@@ -1,13 +1,4 @@
 
-header figure{
-  float: left;
-}
-
-header h1{
-  font-size: 1.2em;
-  font-weight: normal;
-  margin: 0 70px 0 0;
-}
 
 header #avatar{
   margin: 0.5em 0.5em 0 0;
@@ -39,6 +30,17 @@ header{
   position: relative;
 
 }
+
+header figure{
+  float: left;
+}
+
+header h1{
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0 70px 0 0;
+}
+
 
 nav{
   background:  #80BCA3;
@@ -100,11 +102,11 @@ footer p:last-child{
 }
 
 footer p:last-child:after{
-  content: "-";
+  content: " -";
 }
 
 footer p:last-child::before{
-  content: "-";
+  content: "- ";
 }
 
 
@@ -163,7 +165,13 @@ footer p:last-child::before{
   right:  3%;
   top: 100%;
 }
-#contenido .item .votacion .comentarios_item,
+
+#contenido .item .votacion a{
+  text-decoration: none;
+}
+#contenido .item .votacion .comentarios_item{
+  float: right;
+}
 #contenido .item .votacion .guardar_item{
   float: right;
 }
@@ -196,18 +204,40 @@ footer p:last-child::before{
 
 .icon-f-arriba:before {
   content: "\e900";
-  color: #08A551;
+  color: #870d2f;
 }
 .icon-f-abajo:before {
   content: "\e901";
-  color: #FC9618;
+  color: #008000;
 }
 .icon-lapiz:before {
   content: "\e908";
   background:  #22BCE0;
-  color: #FFFFFF;
+  margin-right: 0.8em;
 }
 .icon-estrella:before {
   content: "\e9d9";
-  color: #FFEF00;
+  color: #befc00;
+}
+
+nav{
+  background: #80BCA3;
+  position: relative;
+  padding: 0 6em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+
+@media screen and(min-width:800px) {
+  #contenido{
+    overflow: hidden;
+  }
+
+  #contenido .item{
+    width: 49%;
+    float: left;
+  }
+
+  #contenido .item:nth-child(odd){
+    margin-right: 2%;
+  }
 }
